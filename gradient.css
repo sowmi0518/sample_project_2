@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Kurale&family=Moon+Dance&family=Qwitcher+Grypen:wght@400;700&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kurale&family=Moon+Dance&family=Qwitcher+Grypen:wght@400;700&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Kurale&family=Moon+Dance&family=Qwitcher+Grypen:wght@400;700&family=Rowdies:wght@300;400;700&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Emblema+One&family=Kurale&family=Moon+Dance&family=Qwitcher+Grypen:wght@400;700&family=Rowdies:wght@300;400;700&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Emblema+One&family=Kurale&family=Lobster&family=Moon+Dance&family=Qwitcher+Grypen:wght@400;700&family=Rowdies:wght@300;400;700&family=Yatra+One&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+#main-con {
+  max-width: 100%;
+  height: auto;
+}
+#sub-con {
+  background: linear-gradient(
+    60deg,
+    rgb(238, 50, 82) 20%,
+
+    rgba(235, 141, 54, 0.863)
+  );
+}
+.content {
+  background-image: url("image/sheos.png");
+  width: 60%;
+  height: 400px;
+  background-position: center;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.cont-left a,
+.cont-right a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.cont-left i,
+.cont-right i {
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  padding: 0 15px;
+  padding-top: 20px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+li a:hover {
+  text-decoration: underline;
+}
+#nav {
+  display: none;
+}
+#side-navbar {
+  width: 45%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  border: 1px solid black;
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+.nav-iterm ul {
+  display: flex;
+  flex-direction: column;
+}
+.nav-iterm a:hover {
+  color: wheat;
+  text-decoration: none;
+}
+#nav-con {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.close {
+  float: right;
+  margin-top: -25px;
+}
+.logo {
+  padding: 0 10px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-iterm {
+  display: flex;
+}
+.search input {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 15px;
+  border-color: rgba(238, 50, 81, 0.39);
+  background-color: rgba(238, 130, 238, 0.205);
+  background-image: url("image/search-removebg-preview.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.search input,
+i {
+  padding: 15px;
+}
+.search input:focus {
+  background-image: none;
+}
+.content h1 {
+  text-align: center;
+  padding: 10px;
+  backdrop-filter: blur(30px);
+  color: white;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.index-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.index-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background: linear-gradient(
+    60deg,
+    rgb(238, 50, 82) 20%,
+
+    rgba(235, 141, 54, 0.863)
+  );
+  border-radius: 5px;
+  font-size: large;
+  box-shadow: 0px 5px 10px black;
+}
+/*transform: translateY(-10px);
+  
+}
+.index-btn:hover {
+  transform: translateY(10px);
+  transition: all 0.5s;
+  box-shadow: 3px 5px 10px pink;
+}*/
+.sub2-head {
+  text-align: center;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 30px 0;
+}
+#sub2-con {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  /* border: 1px solid; */
+  margin: auto;
+}
+.shoes {
+  flex: 25%;
+  margin: 30px 10px;
+  padding: 15px 0;
+  background-color: rgb(255, 227, 167);
+  border-radius: 5px;
+}
+.shoes img {
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.shoes:hover img {
+  border: 2px solid wheat;
+  border-radius: 50%;
+  box-shadow: 0px 2px 7px black;
+  transform: translateY(-5px);
+}
+/* .shoes img:hover{
+  transition: all 0.3s; 
+  border: 2px solid wheat;
+  border-radius: 50%;
+  
+} */
+.shoes-con h3 {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.shoes-btn {
+  width: 100px;
+  margin: auto;
+  /* border: 1px solid; */
+  background: linear-gradient(
+    60deg,
+    rgb(238, 50, 82) 20%,
+
+    rgba(235, 141, 54, 0.863)
+  );
+  border-radius: 5px;
+  padding: 10px 0px;
+  font-size: large;
+  box-shadow: 0px 5px 10px black;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
+.shoes-btn a {
+  color: black;
+  text-decoration: none;
+  border: none;
+  /* background: linear-gradient(
+    60deg,
+    rgb(238, 50, 82) 20%,
+
+    rgba(235, 141, 54, 0.863)
+  );
+  border-radius: 5px;
+  font-size: large;
+  box-shadow: 0px 5px 10px black;
+  transform: translateY(-10px); */
+}
+.shoes-btn:hover {
+  transform: translateY(5px);
+  box-shadow: none;
+  color: white;
+}
+/*Products Details*/
+#women-products {
+  max-width: 90%;
+  gap: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: center;
+  margin: auto;
+  scrollbar-width: 90%;
+  /*   border: 1px solid; */
+}
+#h2 {
+  text-align: center;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 50px 0;
+}
+.women-img {
+  width: 300px;
+  height: 400px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  /*border: 1px solid;
+  margin-top: 40px;*/
+}
+.women-img:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 3px 8px black;
+}
+.women-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.women-img-con h3 {
+  text-align: center;
+}
+
+.rating {
+  height: 3 0px;
+  width: 100px;
+  margin: auto;
+  background: rgb(7, 184, 7);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+#men-products {
+  max-width: 90%;
+  gap: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: center;
+  margin: auto;
+  scrollbar-width: 90%;
+  /*border: 1px solid; */
+}
+#sports-products {
+  max-width: 90%;
+  gap: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: center;
+  margin: auto;
+  scrollbar-width: 90%;
+}
+footer {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+#sub-footer {
+  height: 350px;
+  background: linear-gradient(
+    60deg,
+    rgb(238, 50, 82) 20%,
+
+    rgba(235, 141, 54, 0.863)
+  );
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-footer h1 {
+  color: white;
+  padding: 20px;
+}
+.left-footer p {
+  font-size: 25px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.left-sub-con {
+  display: flex;
+  flex-direction: column;
+}
+.left-sub-con a {
+  color: white;
+  text-decoration: none;
+}
+.right-footer h1 {
+  color: white;
+  padding: 20px;
+}
+.right-sub-con ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .nav-link {
+    display: none;
+  }
+  #nav {
+    display: block;
+  }
+  .search input,
+  i {
+    padding: 0px 5px;
+    margin-top: 10px;
+  }
+  .cont-left a,
+  .cont-right a {
+    display: none;
+  }
+}
